@@ -1,0 +1,16 @@
+dbt_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "https://rc07684.ap-southeast-1.snowflakecomputing.com"
+      user: "Ritheesh"
+      password: "Rithi@1604"
+      role: "dbt_role"
+      warehouse: "dbt_wh"
+      database: "dbt_db"
+      schema: "dbt_schema"
+      threads: 4
+      client_session_keep_alive: False
+      retries: 5
+      retry_on_database_errors: true
